@@ -44,5 +44,5 @@ adb pull /system/lib/libOmxH264Dec.so ../../../vendor/htc/$DEVICE/proprietary/li
 adb pull /system/lib/libOmxMpeg4Dec.so ../../../vendor/htc/$DEVICE/proprietary/libOmxMpeg4Dec.so
 adb pull /system/lib/libOmxVidEnc.so ../../../vendor/htc/$DEVICE/proprietary/libOmxVidEnc.so
 adb pull /system/lib/hw/lights.msm7k.so ../../../vendor/htc/$DEVICE/proprietary/lights.msm7k.so
-
+adb pull /system/etc/apns-conf.xml ../../../vendor/htc/$DEVICE/apns-conf.xml
 ./setup-makefiles.sh

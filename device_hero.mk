@@ -1,4 +1,4 @@
-#
+/#
 # Copyright (C) 2008 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -83,7 +83,7 @@ PRODUCT_COPY_FILES += \
     
 # GSM APN list
 PRODUCT_COPY_FILES += \
-    vendor/cyanogen/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
+    vendor/htc/hero/apns-conf.xml:system/etc/apns-conf.xml
 
 # media configuration xml file
 PRODUCT_COPY_FILES += \

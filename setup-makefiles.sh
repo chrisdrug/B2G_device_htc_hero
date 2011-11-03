@@ -95,7 +95,7 @@ PRODUCT_COPY_FILES := \\
 
 # Pick up overlay for features that depend on non-open-source files
 DEVICE_PACKAGE_OVERLAYS := vendor/htc/__DEVICE__/overlay
-TARGET_PRELINKER_MAP=vendor/htc/__DEVICE__/prelink-linux-arm-hero.map
+TARGET_PRELINKER_MAP=$(TOP)/vendor/htc/__DEVICE__/prelink-linux-arm-hero.map
 \$(call inherit-product, vendor/htc/__DEVICE__/device___DEVICE__-vendor-blobs.mk)
 EOF
 

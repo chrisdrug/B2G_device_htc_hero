@@ -23,10 +23,4 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := hero-keypad.kcm
 include $(BUILD_KEY_CHAR_MAP)
         
-# the system properties for each device, loaded by init
-file := $(TARGET_OUT)/build.hero.prop
-ALL_PREBUILT += $(file)
-$(file) : $(LOCAL_PATH)/build.hero.prop | $(ACP)
-	$(transform-prebuilt-to-target)
-
 -include vendor/htc/hero/AndroidBoardVendor.mk#

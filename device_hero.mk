@@ -63,6 +63,9 @@ PRODUCT_COPY_FILES += \
     frameworks/base/data/etc/android.hardware.touchscreen.multitouch.distinct.xml:system/etc/permissions/android.hardware.touchscreen.multitouch.distinct.xml \
     frameworks/base/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
 
+# Touchscreen Configuration File
+    device/htc/hero/prebuilt/synaptics-rmi-touchscreen.idc:system/usr/idc/synaptics-rmi-touchscreen.idc
+
 PRODUCT_COPY_FILES += \
     device/htc/hero/init.hero.rc:root/init.hero.rc \
     device/htc/hero/init.rc:root/init.rc \

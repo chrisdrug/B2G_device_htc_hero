@@ -1,6 +1,7 @@
 on early-init
     start ueventd
-
+    import /init.b2g.rc
+    
 on init
 
 sysclktz 0
@@ -99,6 +100,9 @@ on fs
     mount yaffs2 mtd@system /system ro remount noatime
     mount yaffs2 mtd@userdata /data nosuid nodev noatime
     mount yaffs2 mtd@cache /cache nosuid nodev noatime
+    chmod 0755 /system/b2g/b2g
+    chmod 0755 /system/b2g/updater
+    chmod 0755 /system/b2g/plugin-container
 
 on post-fs
     # once everything is setup, no need to modify /

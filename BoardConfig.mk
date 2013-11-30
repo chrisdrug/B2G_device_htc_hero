@@ -45,7 +45,7 @@ TARGET_ARCH_VARIANT := armv5te
 # Building kernel
 TARGET_KERNEL_SOURCE := kernel/htc/hero
 TARGET_KERNEL_CONFIG := hero_defconfig
-OARD_KERNEL_BASE := 0x19200000
+BOARD_KERNEL_BASE := 0x19200000
 BOARD_PAGE_SIZE := 0x00000800
 TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.4.3
 
@@ -61,7 +61,7 @@ WIFI_DRIVER_FW_STA_PATH     := "/etc/firmware/tiinit_5.3.53.bts"
 WIFI_DRIVER_FW_AP_PATH      := "/etc/wifi/Fw1251r1c.bin"
 
 BOARD_KERNEL_CMDLINE := no_console_suspend=1 console=null
-B
+
 
 #libsurfaceflinger to avoid Draw Texture Extenstion
 BOARD_AVOID_DRAW_TEXTURE_EXTENSION := true

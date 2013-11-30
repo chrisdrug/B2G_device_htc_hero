@@ -15,13 +15,7 @@
 #LOCAL_MODULE_TAGS := optional
 #include $(call all-named-subdir-makefiles, recovery  boot  libsensors  liblights)
 
-LOCAL_MODULE_TAGS := optional
 
-LOCAL_PATH := $(my-dir)
-subdir_makefiles := \
-	$(LOCAL_PATH)/liblights/Android.mk \
-	$(LOCAL_PATH)/libsensors/Android.mk \
-	$(LOCAL_PATH)/libcamera/Android.mk \
-	$(LOCAL_PATH)/recovery/Android.mk
+LOCAL_PATH := $(call my-dir)
 
-include $(subdir_makefiles)
+include $(call all-makefiles-under,$(LOCAL_PATH))

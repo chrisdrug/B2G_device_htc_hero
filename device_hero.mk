@@ -1,4 +1,3 @@
-
 # Copyright (C) 2008 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -94,14 +93,14 @@ PRODUCT_COPY_FILES += \
 
 # Kernel Targets
 ifeq ($(TARGET_PREBUILT_KERNEL),)
-	LOCAL_KERNEL := device/htc/hero/kernel
+	LOCAL_KERNEL := kernel/htc/hero/
 else
 	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
 PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel
 
-KERNEL_NAME := 2.6.29.6-flykernel-12a
+#KERNEL_NAME := 2.6.29.6-flykernel-12a
 
 PRODUCT_COPY_FILES += \
     device/htc/hero/modules/modules.dep.bb:system/lib/modules/$(KERNEL_NAME)/modules.dep.bb \

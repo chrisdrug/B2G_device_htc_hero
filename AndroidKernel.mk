@@ -124,8 +124,8 @@ ifeq ($(TARGET_KERNEL_MODULES),)
 endif
 
 $(KERNEL_OUT):
-        mkdir -p $(KERNEL_OUT)
-        mkdir -p $(KERNEL_MODULES_OUT)
+	mkdir -p $(KERNEL_OUT)
+	mkdir -p $(KERNEL_MODULES_OUT)
 
 $(KERNEL_CONFIG): $(KERNEL_OUT)
         $(MAKE) -C $(KERNEL_SRC) O=$(KERNEL_OUT) ARCH=$(TARGET_ARCH) $(ARM_CROSS_COMPILE) $(KERNEL_DEFCONFIG)
